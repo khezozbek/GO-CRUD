@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App - Delete Todo</title>
+</head>
+<body>
+    <h2>Delete Todo</h2>
+    <form action="/todo/delete" method="post">
+        <label for="todo">Confirm delete for this todo:</label>
+        <input type="text" id="todo" name="todo" value="{{.}}" readonly>
+        <button type="submit">Delete Todo</button>
+    </form>
+    <br>
+    <a href="/">Back to Todo List</a>
+</body>
+</html>

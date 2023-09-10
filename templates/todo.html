@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App - Todo Detail</title>
+</head>
+<body>
+    <h2>Todo Detail</h2>
+    <p>{{.}}</p>
+    <form action="/delete" method="post">
+        <input type="hidden" name="todo" value="{{.}}">
+        <button type="submit">Delete Todo</button>
+    </form>
+</body>
+</html>
